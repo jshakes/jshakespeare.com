@@ -1,0 +1,23 @@
+.home-hero {
+  text-align: center;
+  @include larger-than(mobile) {
+    @include safe-flexbox;
+    text-align: left;
+    align-items: center;
+  }
+}
+
+.home-hero__logo {
+  margin: 0 0 2em;
+  @include larger-than(mobile) {
+    margin: 0 $column-gutter 0 0;
+  }
+}
+
+.home-hero__heading {
+  margin: 0 0 1em;
+}
+
+.home-hero__subheading {
+  margin: 0;
+}
