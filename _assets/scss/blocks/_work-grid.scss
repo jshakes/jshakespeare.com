@@ -1,3 +1,5 @@
+$extrude-height: 0.75em;
+
 .work-grid {
   @extend .reset-ul;
   @include larger-than(mobile) {
@@ -6,55 +8,59 @@
 }
 
 .work-grid__item {
+  margin-bottom: 1em;
   a {
     @extend .reset-a;
     display: block;
-    position: relative;
     line-height: 1;
-    transition: all 0.25s;
     margin-bottom: 1em;
-    left: -1em;
-    bottom: -1em;
-    border-bottom: 0.5em solid transparent;
-    border-left: 0.5em solid transparent;
     &:hover {
       text-decoration: none;
-      bottom: 0;
-      left: 0;
       color: $color-accent-1;
-      border-bottom-color: darken($color-accent-1, 20%);
-      border-left-color: $color-accent-1;
-    }
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      border: 0.5em solid transparent;          
-    }
-    &:before {
-      left: -0.5em;
-      top: -0.5em;
-      border-left: 0.5em solid $color-background;
-    }
-    &:after {
-      right: -0.5em;
-      bottom: -0.5em;
-      border-bottom: 0.5em solid $color-background;
+      .work-grid__link-inner {
+        bottom: 0;
+        border-bottom: $extrude-height solid darken($color-accent-1, 20%);
+        border-left: $extrude-height solid $color-accent-1;
+        margin-bottom: -$extrude-height;
+        width: calc(100% + #{$extrude-height * 2});
+      }
     }
   }
 }
 
-.work-grid__link-inner {
+.work-grid__link-inner,
+.work-grid__item a:active .work-grid__link-inner {
   background: $color-background;
   position: relative;
-  top: -0.5em;
-  right: -0.5em;
-  width: calc(100% + 0.5em);
+  left: -$extrude-height;
+  bottom: -$extrude-height;
+  padding: 0 0 $extrude-height $extrude-height;
+  width: calc(100% + #{$extrude-height});
+  transition: all 0.15s;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  margin-bottom: 0;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    border: $extrude-height solid transparent;          
+  }
+  &:before {
+    left: -$extrude-height;
+    top: -$extrude-height;
+    border-left: $extrude-height solid $color-background;
+  }
+  &:after {
+    right: -$extrude-height;
+    bottom: -$extrude-height;
+    border-bottom: $extrude-height solid $color-background;
+  }
 }
 
 .work-grid__thumb {
   @include aspect-ratio(3, 2);
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   img {
     position: absolute;
     width: 100%;
