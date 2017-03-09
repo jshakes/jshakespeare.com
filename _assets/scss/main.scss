@@ -8,7 +8,7 @@
 @import "common/colors";
 @import "base/media_queries";
 @import "common/typography";
-// @import "common/svg_icons";
+@import "common/grid";
 @import "base/layout";
 
 // PAGE BLOCKS
@@ -18,4 +18,4 @@
 @import "blocks/work-grid";
 
 // DEMO COMPONENTS
-@import "components/demo";
+@import "components/section";

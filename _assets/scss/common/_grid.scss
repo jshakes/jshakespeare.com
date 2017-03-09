@@ -1,0 +1,15 @@
+.max-width-wrapper {
+  width: 100%;
+  min-width: $width-page-content-min;
+  max-width: $width-page-content-max;
+}
+
+.content-wrapper {
+  @extend .max-width-wrapper;
+  padding: 0 $width-content-padding-mobile;
+  margin-right: auto;
+  margin-left: auto;
+  @include larger-than(mobile) {
+    padding: 0 $width-content-padding;
+  }
+}

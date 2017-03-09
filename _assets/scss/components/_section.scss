@@ -1,0 +1,10 @@
+.section {
+  padding: $height-content-padding-mobile 0;
+  @include larger-than(mobile) {
+    padding: $height-content-padding 0;
+  }
+}
+
+.section__heading {
+  margin-bottom: 2em;
+}

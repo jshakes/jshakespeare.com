@@ -1,10 +1,18 @@
 .home-hero {
   text-align: center;
+  background: $color-accent-1;
+  color: white;
+  @include larger-than(mobile) {
+    text-align: left;
+  }
+}
+
+.home-hero__inner {
+  @extend .content-wrapper;
   @include larger-than(mobile) {
     @include safe-flexbox;
-    text-align: left;
     align-items: center;
-  }
+  }  
 }
 
 .home-hero__logo {

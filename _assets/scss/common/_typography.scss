@@ -1,9 +1,11 @@
-$base-font: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font: "Avenir", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 html {
   font-size: $base-font-size * 1px;
   font-family: $base-font;
   color: $color-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 li {
@@ -18,4 +20,13 @@ pre {
   vertical-align: bottom;
   border-radius: .3em;
   border: 1px solid #DDD;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-weight: 400;
 }

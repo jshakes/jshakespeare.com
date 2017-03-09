@@ -3,33 +3,28 @@ bodyclass: homepage
 ---
 
 <div class="home-hero">
-  <div class="home-hero__logo">
-    <a href="/">
-      <img src="/assets/images/jshakes-logo.svg" alt="JShakespeare.com">
-    </a>
-  </div>
-  <div class="home-hero__copy">
-    <h1 class="home-hero__heading">James Shakespeare</h1>
-    <h2 class="home-hero__subheading">Is a front-end web developer based in New York</h2>
+  <div class="home-hero__inner section">
+    <div class="home-hero__logo">
+      <a href="/">
+        <img src="/assets/images/js-logo.svg" alt="JShakespeare.com">
+      </a>
+    </div>
+    <div class="home-hero__copy">
+      <h1 class="home-hero__heading">James Shakespeare</h1>
+      <h2 class="home-hero__subheading">Is a front-end web developer based in New York</h2>
+      <p>I specialize in:</p>
+      <ul>
+        <li>Building user interfaces with a deep consideration of human needs</li>
+        <li>Translating business needs into systems thinking</li>
+        <li>Maintaining a constant awareness of the front-end web's ever-evolving technological landscape</li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<p>I specialize in:</p>
-<ul>
-  <li>Building user interfaces with a deep consideration of human needs</li>
-  <li>Translating business needs into systems thinking</li>
-  <li>Maintaining a constant awareness of the front-end web's ever-evolving technological landscape</li>
-</ul>
-
-<ul class="work-grid">
-{% for work in site.work %}
-  <li class="work-grid__item">
-    <a href="{{ work.url }}">
-      <div class="work-grid__thumb">
-        <img src="/assets/images/thumbs/{{ work.thumb }}">
-      </div>
-      <h3 class="work-grid__heading">{{ work.title }}</h3>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<div class="section">
+  <div class="content-wrapper">
+    <h2 class="section__heading">Work</h2>
+    {%include blocks/loop-work.html %}
+  </div>
+</div>

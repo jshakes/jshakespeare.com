@@ -1,23 +1,22 @@
 $mqs: (
-  small-mobile: 460 / 16,
-  almost-mobile: 570 / 16,
-  mobile: 767 / 16,
-  tablet: 1024 / 16,
-  small-desktop: 1280 / 16,
-  medium-desktop: 1440 / 16,
-  desktop: 1500 / 16,
+  small-mobile: 460 / $base-font-size * 1em,
+  almost-mobile: 570 / $base-font-size * 1em,
+  mobile: 767 / $base-font-size * 1em,
+  tablet: 1024 / $base-font-size * 1em,
+  desktop: 1280 / $base-font-size * 1em,
+  full: 1280 / $base-font-size * 1em + ($width-content-padding * 2)
 );
 
 @mixin smaller-than($size) {
   $width: #{map-get($mqs, $size)};
-  @include smaller-than-em($width) {
+  @media (max-width: $width) {
     @content;
   }
 }
 
 @mixin larger-than($size) {
   $width: #{map-get($mqs, $size)};
-  @include larger-than-em($width) {
+  @media (min-width: $width) {
     @content;
   }
 }
@@ -25,28 +24,6 @@ $mqs: (
 @mixin between($min, $max) {
   $minwidth: #{map-get($mqs, $min)};
   $maxwidth: #{map-get($mqs, $max)};
-  @include between-em($minwidth, $maxwidth) {
-    @content;
-  }
-}
-
-@mixin smaller-than-em($size) {
-  $width: #{1.0 * $size * $base-font-size * 1px};
-  @media (max-width: $width) {
-    @content;
-  }
-}
-
-@mixin larger-than-em($size) {
-  $width: #{1.0 * $size * $base-font-size * 1px};
-  @media (min-width: $width) {
-    @content;
-  }
-}
-
-@mixin between-em($min, $max) {
-  $minwidth: #{1.0 * $min * $base-font-size * 1px};
-  $maxwidth: #{1.0 * $max * $base-font-size * 1px};
   @media (min-width: $minwidth) and (max-width: $maxwidth) {
     @content;
   }

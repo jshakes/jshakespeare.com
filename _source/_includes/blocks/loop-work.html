@@ -1,1 +1,15 @@
-loop-work.html
+<ul class="work-grid">
+{% for work in site.work %}
+  <li class="work-grid__item">
+    <a href="{{ work.url }}">
+      <div class="work-grid__link-inner">
+        <div class="work-grid__thumb">
+          <img src="/assets/images/thumbs/{{ work.thumb }}">
+        </div>
+        <h3 class="work-grid__heading">{{ work.title }}</h3>
+      </div>
+    </a>
+    <p class="work-grid__blurb">{{ work.blurb }}</p>
+  </li>
+  {% endfor %}
+</ul>
