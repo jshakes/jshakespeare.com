@@ -1,15 +1,20 @@
 .posts {
   @extend .reset-ul;  
-}
-
-.posts__item {
-  margin-bottom: 2em;
+  margin-top: -1em;
 }
 
 .posts__permalink {
   @extend .reset-a;
-  transition: color, .15s;
+  display: block;
+  transition: all .15s;
+  padding: 1em 0;
   &:hover {
-    color: $color-accent-1;
+    background: $color-accent-1;
+    color: white;
+    text-decoration: none;
   }
+}
+
+.posts__link-inner {
+  @extend .content-wrapper;
 }

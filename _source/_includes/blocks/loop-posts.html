@@ -2,8 +2,10 @@
   {% for post in site.posts %}
   <li class="posts__item">
     <a class="posts__permalink" href="{{ post.url }}">
-      <h3 class="posts__heading">{{ post.title }}</h3>
-      <span class="posts__publish-date">{{ post.date | date: "%e %B, %Y" }}</span>
+      <div class="posts__link-inner">
+        <h3 class="posts__heading">{{ post.title }}</h3>
+        <span class="posts__publish-date">{{ post.date | date: "%e %B, %Y" }}</span>
+      </div>
     </a>
   </li>
   {% endfor %}
