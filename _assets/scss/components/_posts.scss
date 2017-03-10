@@ -1,0 +1,15 @@
+.posts {
+  @extend .reset-ul;  
+}
+
+.posts__item {
+  margin-bottom: 2em;
+}
+
+.posts__permalink {
+  @extend .reset-a;
+  transition: color, .15s;
+  &:hover {
+    color: $color-accent-1;
+  }
+}
