@@ -1,0 +1,38 @@
+.home-intro__inner {
+  @extend .content-wrapper;
+  > * {
+    font-size: 1.25em;
+  }
+}
+
+.home-intro__items {
+  @extend .reset-ul;
+}
+
+.home-intro__item {
+  position: relative;
+  padding-left: 4em;
+  margin-bottom: 2em;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    left: 0;
+    top: 0.25em;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(1n+1):before {
+    background-image: url('../images/cube-bullet-1.svg');
+  }
+  &:nth-child(2n+2):before {
+    background-image: url('../images/cube-bullet-2.svg');
+  }
+  &:nth-child(3n+3):before {
+    background-image: url('../images/cube-bullet-3.svg');
+  }
+  &:nth-child(4n+4):before {
+    background-image: url('../images/cube-bullet-4.svg');
+  }
+}
