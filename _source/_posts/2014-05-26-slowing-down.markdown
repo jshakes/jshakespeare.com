@@ -1,7 +1,7 @@
 ---
 date: 2014-05-26 23:22:00+05:00
 layout: post
-slug: slowing-down
+permalink: slowing-down
 title: Slowing down
 ---
 

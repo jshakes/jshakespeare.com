@@ -1,7 +1,7 @@
 ---
 date: 2014-04-02 12:00:00+05:00
 layout: post
-slug: code-isnt-poetry
+permalink: code-isnt-poetry
 title: Code isn't poetry
 image: hemingway.jpg
 ---

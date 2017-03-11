@@ -1,9 +1,9 @@
-.posts {
+.posts-loop {
   @extend .reset-ul;  
   margin-top: -1em;
 }
 
-.posts__permalink {
+.posts-loop__permalink {
   @extend .reset-a;
   display: block;
   transition: all .15s;
@@ -15,6 +15,6 @@
   }
 }
 
-.posts__link-inner {
+.posts-loop__link-inner {
   @extend .content-wrapper;
 }

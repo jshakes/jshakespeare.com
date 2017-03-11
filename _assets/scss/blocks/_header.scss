@@ -1,8 +1,26 @@
-header {
-  border-bottom: 10px solid $color-border;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: .7rem;
-  text-align: right;
+.header {
+  background: $color-accent-1;
+  padding: 2em 0;
+  color: white;
+  a {
+    @extend .reset-a;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.header__logo,
+.header__title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__logo {
+  height: 2em;
+  margin-right: 1em;
+}
+
+.header__title {
+  font-size: 1.5em;
 }

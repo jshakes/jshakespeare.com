@@ -1,7 +1,7 @@
 ---
 date: 2014-05-29 22:46:00+05:00
 layout: post
-slug: tasty-media-queries-in-sass
+permalink: tasty-media-queries-in-sass
 title: Tasty media queries in Sass
 ---
 

@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2013-05-20 17:24:56+00:00
 layout: post
-slug: you-arent-learning-if-you-arent-doing
+permalink: you-arent-learning-if-you-arent-doing
 title: You aren't learning if you aren't doing
 wordpress_id: 1074
 image: you-arent-learning-if-you-arent-doing.jpg

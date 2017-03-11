@@ -1,7 +1,7 @@
 ---
 date: 2014-03-09 18:22:56+05:00
 layout: post
-slug: easy-icomoon-icons-with-sass
+permalink: easy-icomoon-icons-with-sass
 title: Easy Icomoon icons with Sass
 ---
 

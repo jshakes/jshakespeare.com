@@ -1,0 +1,36 @@
+---
+layout: main
+---
+{% include blocks/header.html %}
+<div class="content-wrapper--narrow">
+  <article class="post">
+    <section class="post__header">
+      {% if page.image %}
+      <img class="post__hero-image" src="/assets/images/post_images/{{ page.image }}" alt="{{ page.title }}">
+      {% endif %}
+      <h1 class="post__title">{{ page.title }}</h1>
+      <span class="post__publish-date">{{ page.date | date: "%B %e, %Y" }}</span>
+    </section>
+    <section class="post__body">
+      {{ content }}
+    </section>
+    <section class="post__footer">
+      <div class="post__footer-buttons">
+        <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via={{ site.twitter }}" class="twitter-share-button" data-lang="en">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="post__footer-text">
+        <p>I'm James Shakespeare. I build websites and write about technology. If you've read this far, you should consider subscribing to my <a href="/atom.xml" target="_blank">RSS feed</a>. You can also follow me on <a href="//twitter.com/{{ site.twitter }}" target="_blank">Twitter</a>.</p>
+      </div>
+      <nav class="post_navigation">
+        {% if page.previous %}
+        <a class="post__previous" href="{{ page.previous.url }}">{{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next %}
+        <a class="post__previous" href="{{page.next.url}}">{{page.next.title}}</a>
+        {% endif %}
+      </nav>
+    </section>    
+  </article>
+</div>
+{% include blocks/footer.html %}

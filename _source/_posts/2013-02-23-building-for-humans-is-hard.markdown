@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2013-02-23 11:00:04+00:00
 layout: post
-slug: building-for-humans-is-hard
+permalink: building-for-humans-is-hard
 title: Building for humans is hard
 wordpress_id: 937
 ---

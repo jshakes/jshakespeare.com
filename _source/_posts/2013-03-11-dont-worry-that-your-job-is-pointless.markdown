@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2013-03-11 16:11:42+00:00
 layout: post
-slug: dont-worry-that-your-job-is-pointless
+permalink: dont-worry-that-your-job-is-pointless
 title: Don't worry that your job is pointless
 wordpress_id: 995
 ---

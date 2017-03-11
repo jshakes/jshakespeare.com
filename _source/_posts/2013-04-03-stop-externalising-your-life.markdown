@@ -2,7 +2,7 @@
 author: jshakes
 date: 2013-04-03 16:58:08+00:00
 layout: post
-slug: stop-externalising-your-life
+permalink: stop-externalising-your-life
 title: Stop externalising your life
 wordpress_id: 1038
 image: stop-externalising-your-life.jpg

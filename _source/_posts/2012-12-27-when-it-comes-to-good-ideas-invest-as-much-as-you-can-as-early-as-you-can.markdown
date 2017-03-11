@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2012-12-27 20:03:08+00:00
 layout: post
-slug: when-it-comes-to-good-ideas-invest-as-much-as-you-can-as-early-as-you-can
+permalink: when-it-comes-to-good-ideas-invest-as-much-as-you-can-as-early-as-you-can
 title: 'Self-started projects: invest as much as you can, as early as you can'
 wordpress_id: 818
 ---

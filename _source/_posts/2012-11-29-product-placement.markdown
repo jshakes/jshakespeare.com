@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2012-11-29 10:10:08+00:00
 layout: post
-slug: product-placement
+permalink: product-placement
 title: Product placement is fine (in its place)
 wordpress_id: 980
 ---

@@ -3,7 +3,7 @@ author: jshakes
 comments: false
 date: 2012-11-03 11:57:31+00:00
 layout: post
-slug: being-a-jack-of-all-trades-to-master-one
+permalink: being-a-jack-of-all-trades-to-master-one
 title: Being a jack-of-all-trades to master one
 wordpress_id: 718
 ---

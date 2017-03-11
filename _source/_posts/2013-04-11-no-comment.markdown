@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2013-04-11 07:32:47+00:00
 layout: post
-slug: no-comment
+permalink: no-comment
 title: No comment.
 wordpress_id: 1052
 image: no-comment.jpg

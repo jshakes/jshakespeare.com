@@ -1,7 +1,7 @@
 ---
 date: 2014-03-02 18:22:56+05:00
 layout: post
-slug: how-to-be-a-terrible-writer
+permalink: how-to-be-a-terrible-writer
 title: How to be a terrible writer
 ---
 

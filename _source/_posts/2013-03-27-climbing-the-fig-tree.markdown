@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2013-03-27 21:30:00+00:00
 layout: post
-slug: climbing-the-fig-tree
+permalink: climbing-the-fig-tree
 title: Climbing the fig tree
 wordpress_id: 1028
 ---

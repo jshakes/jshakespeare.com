@@ -3,7 +3,7 @@ author: jshakes
 comments: true
 date: 2013-03-19 07:09:40+00:00
 layout: post
-slug: the-dire-state-of-wordpress
+permalink: the-dire-state-of-wordpress
 title: The dire state of Wordpress
 wordpress_id: 1007
 ---

@@ -13,3 +13,8 @@
     padding: 0 $width-content-padding;
   }
 }
+
+.content-wrapper--narrow {
+  @extend .content-wrapper;
+  max-width: 40em;
+}

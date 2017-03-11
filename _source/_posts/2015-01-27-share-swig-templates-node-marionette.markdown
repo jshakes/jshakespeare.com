@@ -1,7 +1,7 @@
 ---
 date: 2015-01-27 22:46:00+05:00
 layout: post
-slug: share-swig-templates-node-marionette
+permalink: share-swig-templates-node-marionette
 title: Sharing Swig templates between Node and Marionette.js
 ---
 

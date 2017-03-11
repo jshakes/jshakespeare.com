@@ -1,10 +1,10 @@
-<ul class="posts">
+<ul class="posts-loop">
   {% for post in site.posts %}
-  <li class="posts__item">
-    <a class="posts__permalink" href="{{ post.url }}">
-      <div class="posts__link-inner">
-        <h3 class="posts__heading">{{ post.title }}</h3>
-        <span class="posts__publish-date">{{ post.date | date: "%e %B, %Y" }}</span>
+  <li class="posts-loop__item">
+    <a class="posts-loop__permalink" href="{{ post.slug }}">
+      <div class="posts-loop__link-inner">
+        <h3 class="posts-loop__heading">{{ post.title }}</h3>
+        <span class="posts-loop__publish-date">{{ post.date | date: "%e %B, %Y" }}</span>
       </div>
     </a>
   </li>

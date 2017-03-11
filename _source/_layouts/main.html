@@ -28,10 +28,7 @@
 
 <body{% if page.bodyclass %} class="{{ page.bodyclass }}"{% endif %}>
   <div class="body-wrapper">
-    {% include blocks/header.html %}
     {{content}}
-    {% include blocks/footer.html %}
   </div>
-  <script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

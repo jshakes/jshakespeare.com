@@ -3,7 +3,7 @@ author: jshakes
 comments: false
 date: 2012-10-22 22:20:52+00:00
 layout: post
-slug: why-app-net-unfortunately-wont-work
+permalink: why-app-net-unfortunately-wont-work
 title: Why App.net (unfortunately) won't work
 wordpress_id: 691
 ---
