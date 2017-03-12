@@ -30,7 +30,7 @@ bodyclass: homepage
 <div class="section">
   <div class="content-wrapper">
     <h2 class="section__heading">Work&mdash; Personal</h2>
-    {% assign work = site.work | where:'type','personal' %}
+    {% assign work = site.work | where:'type','personal' | sort:'order' %}
     {%include blocks/loop-work.html %}
   </div>
 </div>
@@ -38,7 +38,7 @@ bodyclass: homepage
 <div class="section">
   <div class="content-wrapper">
     <h2 class="section__heading">Work&mdash; Client</h2>
-    {% assign work = site.work | where:'type','client' %}
+    {% assign work = site.work | where:'type','client' | sort:'order' %}
     {%include blocks/loop-work.html %}
   </div>
 </div>
