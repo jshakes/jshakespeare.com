@@ -1,0 +1,18 @@
+.work__buttons {
+  margin: 0 auto $height-content-padding;
+  text-align: center;
+}
+
+.work__button {
+  @extend .reset-a;
+  transition: background-color, 0.1s;
+  background-color: $color-accent-1;
+  color: $color-background;
+  padding: 1em;
+  display: inline-block;
+  margin-right: 1em;
+  &:hover {
+    text-decoration: none;
+    background-color: lighten($color-accent-1, 10%);
+  }
+}

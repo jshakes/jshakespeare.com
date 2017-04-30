@@ -1,0 +1,24 @@
+---
+layout: main
+---
+{% include blocks/header.html %}
+<div class="content-wrapper--narrow">
+  <article class="post work">
+    <section class="post__header">
+      <h1 class="post__title">{{ page.title }}</h1>
+      <span class="post__publish-date">{{ page.date | date: "%B %Y" }}</span>
+    </section>
+    <div class="work__buttons">
+      {% if page.projectUrl %}
+      <a href="{{ page.projectUrl }}" target="_blank" class="work__button">See the project</a>
+      {% endif %}
+      {% if page.githubUrl %}
+      <a href="{{ page.githubUrl }}" target="_blank" class="work__button">See the code</a>
+      {% endif %}
+    </div>
+    <section class="post__body">
+      {{ content }}
+    </section>
+  </article>
+</div>
+{% include blocks/footer.html %}

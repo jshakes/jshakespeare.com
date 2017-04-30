@@ -24,10 +24,10 @@ layout: main
       </div>
       <nav class="post_navigation">
         {% if page.previous %}
-        <a class="post__previous" href="{{ page.previous.url }}">{{page.previous.title}}</a>
+        <p>Previous: <a class="post__previous" href="{{ page.previous.url }}">{{page.previous.title}}</a></p>
         {% endif %}
         {% if page.next %}
-        <a class="post__previous" href="{{page.next.url}}">{{page.next.title}}</a>
+        <p>Next: <a class="post__next" href="{{page.next.url}}">{{page.next.title}}</a></p>
         {% endif %}
       </nav>
     </section>    

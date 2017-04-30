@@ -5,7 +5,9 @@ layouts_dir:  ./_layouts
 data_dir:     ./_data
 includes_dir: ./_includes
 collections:  
-  - work
+  work:
+    output: true
+    permalink: /work/:path/
 plugins_dir:  null
 
 # Debug
@@ -18,11 +20,15 @@ url: "" # the base hostname & protocol for your site without trailing slash
 
 # Defaults
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: main
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
 
 # Build settings
 markdown: kramdown

@@ -11,15 +11,33 @@ html {
 li {
 }
 
-pre {
-  display: inline-block;
+blockquote{
+  border-left: 2px solid #DEDEDE;
+  padding-left: 1em;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+code{
+  font-family: monospace;
   background: #EEE;
-  padding: 0 8px;
-  margin: 0;
-  font-size: $base-font-size;
-  vertical-align: bottom;
-  border-radius: .3em;
-  border: 1px solid #DDD;
+  padding: .1em .25em;
+}
+
+pre{
+  background: #111;
+  padding: 1em;
+  line-height: 1.5;
+  margin: 0 0 2em;
+  white-space: pre-wrap;
+  code{
+    background: none;
+    padding: 0;
+    color: white;
+  }
+  @include smaller-than(medium) {
+    font-size: .75em;
+  }
 }
 
 p {
