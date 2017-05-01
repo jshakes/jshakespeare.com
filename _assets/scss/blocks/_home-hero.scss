@@ -17,15 +17,17 @@
 
 .home-hero__logo {
   margin: 0 0 2em;
+  flex-shrink: 0;
   @include larger-than(mobile) {
     margin: 0 $column-gutter 0 0;
   }
 }
 
-.home-hero__heading {
+.home-hero__heading,
+.home-hero__subheading {
   margin: 0 0 1em;
 }
 
 .home-hero__subheading {
-  margin: 0;
+  font-size: 1.25em;
 }
