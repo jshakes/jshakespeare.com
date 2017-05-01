@@ -23,8 +23,12 @@
 .work__body {
   @extend .post__body;
   > p {
+    padding: 0 $width-content-padding-mobile;
     margin-right: auto;
     margin-left: auto;
     max-width: 40em;
+    @include larger-than(mobile) {
+      padding: 0 $width-content-padding;
+    }
   }
 }
