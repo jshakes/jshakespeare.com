@@ -18,20 +18,20 @@ blockquote {
 
 code {
   background: #EEE;
-  padding: .1em .25em;
+  padding: .333333em .5em;
+  font-family: $code-font;
+  font-size: 87.5%;
 }
 
 pre {
-  font-family: $code-font;
   padding: $width-content-padding-mobile;
   line-height: 1.5;
   white-space: pre-wrap;
   font-size: .75em;
   code {
-    font-family: inherit;
     background: none;
     padding: 0;
-    color: white;
+    font-size: 1em;
   }
   @include larger-than(mobile) {
     padding: $width-content-padding;
