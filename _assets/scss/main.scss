@@ -3,13 +3,16 @@
 @import "base/normalize";
 @import "base/defaults";
 @import "base/resets";
-@import "common/webfonts";
+@import "base/webfonts";
 @import "common/helpers";
 @import "common/colors";
 @import "base/media_queries";
 @import "common/typography";
 @import "common/grid";
 @import "base/layout";
+
+// VENDOR
+@import "vendor/solarized-dark-pygments";
 
 // PAGE BLOCKS
 @import "blocks/header";

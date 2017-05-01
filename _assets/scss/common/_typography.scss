@@ -1,4 +1,5 @@
-$base-font: "Avenir", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font: 'Avenir', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$code-font: 'Ubuntu Mono', 'Courier New', monospace;
 
 html {
   font-size: $base-font-size * 1px;
@@ -8,35 +9,33 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-li {
-}
-
-blockquote{
+blockquote {
   border-left: 2px solid #DEDEDE;
   padding-left: 1em;
   font-style: italic;
   margin-bottom: 1em;
 }
 
-code{
-  font-family: monospace;
+code {
   background: #EEE;
   padding: .1em .25em;
 }
 
-pre{
-  background: #111;
-  padding: 1em;
+pre {
+  font-family: $code-font;
+  padding: $width-content-padding-mobile;
   line-height: 1.5;
-  margin: 0 0 2em;
   white-space: pre-wrap;
-  code{
+  font-size: .75em;
+  code {
+    font-family: inherit;
     background: none;
     padding: 0;
     color: white;
   }
-  @include smaller-than(medium) {
-    font-size: .75em;
+  @include larger-than(mobile) {
+    padding: $width-content-padding;
+    font-size: 1em;
   }
 }
 
