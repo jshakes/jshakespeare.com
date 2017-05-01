@@ -4,12 +4,13 @@ thumb: moon-tonight.png
 blurb: Location-based rendering of tonight's moon phase using CSS
 type: personal
 order: 2
+date: 2016-09-19
 projectUrl: http://moontonight.co
 githubUrl: https://github.com/jshakes/moontonight
 ---
 The Moon Tonight started with a simple thought: could all the moon’s phases be rendered purely with CSS? I ran a [few experiments](https://codepen.io/jshakes/pen/zrByoQ) and discovered that they could.
 
-<img src="/assets/images/gifs/moontonight-1.gif" alt="The Moon Tonight">
+<figure><img src="/assets/images/gifs/moontonight-1.gif" alt="The Moon Tonight"></figure>
 
 The next step was to find a source of data for determining what phase the moon was in given the user’s location. For this I used the Dark Sky API and supplied location data using the browser’s Geolocation API (with a fallback to the Google Places API).
 

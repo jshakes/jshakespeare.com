@@ -15,4 +15,16 @@
     text-decoration: none;
     background-color: lighten($color-accent-1, 10%);
   }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work__body {
+  @extend .post__body;
+  > p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40em;
+  }
 }
