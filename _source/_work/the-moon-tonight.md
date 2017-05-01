@@ -45,7 +45,7 @@ function getPhaseName(phase) {
 }
 {% endhighlight %}
 
-Using a Sass loop I then created 100 CSS classes to which could I could map these values and provide a visual rendering for each phase.
+Using a [Sass mixin and a loop](https://github.com/jshakes/moontonight/blob/master/_assets/scss/modules/_moon.scss) I then created 100 CSS classes to which could I could map these values and provide a visual rendering for each phase.
 
 I wrote a little extra Javascript to provide the ability to look at the coming week's moon phases (Dark Sky provides a seven day forecast), plus a few other features like displaying a warning for days on which heavy cloud was forecast that might obscure the moon.
 

@@ -24,7 +24,9 @@
   font-size: 1.5em;
   margin: 1.5em 0;
   text-align: center;
-  padding: 0 25%;
+  @include larger-than(mobile) {
+    padding: 0 25%;
+  }
 }
 
 .work__body {
@@ -34,9 +36,5 @@
     margin-right: auto;
     margin-left: auto;
     max-width: $width-page-content-narrow - ($width-content-padding * 2);
-    padding: 0 $width-content-padding-mobile;
-    @include larger-than(mobile) {
-      padding: 0;
-    }
   }
 }
