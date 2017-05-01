@@ -9,7 +9,7 @@ layout: main
       <img class="post__hero-image" src="/assets/images/post_images/{{ page.image }}" alt="{{ page.title }}">
       {% endif %}
       <h1 class="post__title">{{ page.title }}</h1>
-      <span class="post__publish-date">{{ page.date | date: "%B %e, %Y" }}</span>
+      <span class="post__publish-date">{{ page.date | date: "%e %B, %Y" }}</span>
     </section>
     <section class="post__body">
       {{ content }}
