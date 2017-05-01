@@ -1,18 +1,52 @@
 ---
 title: The Moon Tonight
 thumb: moon-tonight.png
-blurb: Location-based rendering of tonight's moon phase using CSS
+subtitle: Location-based rendering of tonight's moon phase using CSS
 type: personal
 order: 2
 date: 2016-09-19
 projectUrl: http://moontonight.co
 githubUrl: https://github.com/jshakes/moontonight
 ---
-The Moon Tonight started with a simple thought: could all the moon’s phases be rendered purely with CSS? I ran a [few experiments](https://codepen.io/jshakes/pen/zrByoQ) and discovered that they could.
+The Moon Tonight started with a simple idea: could all the moon’s phases be rendered purely with CSS? I ran a [few experiments](https://codepen.io/jshakes/pen/zrByoQ) and discovered that, with a little visual trickery, they could.
 
-<figure><img src="/assets/images/gifs/moontonight-1.gif" alt="The Moon Tonight"></figure>
+The HTML element for the moon contains on two child divs, one for each half of the moon’s face. Within each of these halves is another pair of divs for the light and dark part of the moon. The light part is always a perfect semi-circle, while the dark part (the shadow) is the element that changes in size and position between phases. For a waxing moon, the shadow div in the right half of the moon moves, and for a waning moon it is the shadow in the left half of the moon that moves.
 
-The next step was to find a source of data for determining what phase the moon was in given the user’s location. For this I used the Dark Sky API and supplied location data using the browser’s Geolocation API (with a fallback to the Google Places API).
+{% include components/figure.html src="/assets/images/gifs/moontonight-1.gif" %}
 
-With the user’s latitude and longitude, Dark Sky can provide a decimal value that describes the moon phase, where <0.5 is a new moon waxing to full, and >0.5 is a waning moon. Using a Sass loop I then created 100 CSS classes to which could I could map this decimal value and provide a visual rendering for each phase.
+This applies to the northern hemisphere only, in the southern hemisphere the reverse is true. In order to determine the user’s hemisphere I used the browser’s Geolocation API (with a fallback to the Google Places API) to get the user’s latitude and longitude. If the user’s location has a latitude of less than zero, the moon element is flipped 180 degrees.
 
+{% include components/figure.html src="/assets/images/gifs/moontonight-2.gif" %}
+
+While determining a user’s hemisphere was fairly trivial, I still needed to determine the current moon phase in the user’s location. Because the time of sunset varies depending on a user’s longitude, the phase of the moon is slightly different from one location to another. Rather than calculate this myself, I used the Dark Sky API.
+
+With the user’s latitude and longitude, Dark Sky provides a decimal value that describes the moon phase, where 0 is a new moon, <0.5 is a waxing moon, and >0.5 is a waning moon.
+
+{% highlight javascript %}
+function getPhaseName(phase) {
+  switch(true) {
+    case (phase < 12.5):
+      return 'New moon';
+    case (phase < 25):
+      return 'Waxing crescent';
+    case (phase < 37.5):
+      return 'First quarter';
+    case (phase < 49):
+      return 'Waxing gibbous';
+    case (phase < 52):
+      return 'Full moon';
+    case (phase < 75):
+      return 'Waning gibbous';
+    case (phase < 87.5):
+      return 'Last quarter';
+    case (phase < 100):
+      return 'Waning crescent';
+  }
+}
+{% endhighlight %}
+
+Using a Sass loop I then created 100 CSS classes to which could I could map these values and provide a visual rendering for each phase.
+
+I wrote a little extra Javascript to provide the ability to look at the coming week's moon phases (Dark Sky provides a seven day forecast), plus a few other features like displaying a warning for days on which heavy cloud was forecast that might obscure the moon.
+
+{% include components/figure.html src="/assets/images/gifs/moontonight-3.gif" %}

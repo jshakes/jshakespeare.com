@@ -7,15 +7,13 @@ layout: main
     <section class="post__header">
       <h1 class="post__title">{{ page.title }}</h1>
       <span class="post__publish-date">{{ page.date | date: "%B %Y" }}</span>
-    </section>
-    <div class="work__buttons">
+      <p class="work__subtitle">{{ page.subtitle }}</p>
       {% if page.projectUrl %}
-      <a href="{{ page.projectUrl }}" target="_blank" class="work__button">See the project</a>
+      <div class="work__buttons">
+        <a href="{{ page.projectUrl }}" target="_blank" class="work__button">See the project</a>
+      </div>
       {% endif %}
-      {% if page.githubUrl %}
-      <a href="{{ page.githubUrl }}" target="_blank" class="work__button">See the code</a>
-      {% endif %}
-    </div>
+    </section>
     <section class="work__body">
       {{ content }}
     </section>

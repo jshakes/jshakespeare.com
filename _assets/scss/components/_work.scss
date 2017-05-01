@@ -20,15 +20,23 @@
   }
 }
 
+.work__subtitle {
+  font-size: 1.5em;
+  margin: 1.5em 0;
+  text-align: center;
+  padding: 0 25%;
+}
+
 .work__body {
   @extend .post__body;
-  > p {
-    padding: 0 $width-content-padding-mobile;
+  > p,
+  .highlight {
     margin-right: auto;
     margin-left: auto;
-    max-width: 40em;
+    max-width: $width-page-content-narrow - ($width-content-padding * 2);
+    padding: 0 $width-content-padding-mobile;
     @include larger-than(mobile) {
-      padding: 0 $width-content-padding;
+      padding: 0;
     }
   }
 }

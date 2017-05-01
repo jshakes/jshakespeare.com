@@ -1,10 +1,10 @@
 $mqs: (
-  small-mobile: 460 / $base-font-size * 1em,
-  almost-mobile: 570 / $base-font-size * 1em,
-  mobile: 767 / $base-font-size * 1em,
-  tablet: 1024 / $base-font-size * 1em,
-  desktop: 1280 / $base-font-size * 1em,
-  full: 1280 / $base-font-size * 1em + ($width-content-padding * 2)
+  small-mobile: 460 / $base-font-size * 1rem,
+  almost-mobile: 570 / $base-font-size * 1rem,
+  mobile: 767 / $base-font-size * 1rem,
+  tablet: 1024 / $base-font-size * 1rem,
+  desktop: 1280 / $base-font-size * 1rem,
+  full: 1280 / $base-font-size * 1rem + ($width-content-padding * 2)
 );
 
 @mixin smaller-than($size) {
