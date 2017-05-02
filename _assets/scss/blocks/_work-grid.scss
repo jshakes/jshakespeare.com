@@ -36,7 +36,7 @@ $extrude-height: 0.75em;
   bottom: -$extrude-height;
   padding: 0 0 $extrude-height $extrude-height;
   width: calc(100% + #{$extrude-height});
-  transition: all 0.15s;
+  transition: all 0.1s linear;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
   margin-bottom: 0;

@@ -2,11 +2,14 @@ $base-font: 'Avenir', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $code-font: 'Ubuntu Mono', 'Courier New', monospace;
 
 html {
-  font-size: $base-font-size * 1px;
+  font-size: $base-font-size-mobile * 1px;
   font-family: $base-font;
   color: $color-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include larger-than(mobile) {
+    font-size: $base-font-size * 1px;
+  }
 }
 
 blockquote {
@@ -27,15 +30,13 @@ pre {
   padding: $width-content-padding-mobile;
   line-height: 1.5;
   white-space: pre-wrap;
-  font-size: .75em;
+  font-size: 1em;
   code {
     background: none;
     padding: 0;
-    font-size: 1em;
   }
   @include larger-than(mobile) {
     padding: $width-content-padding;
-    font-size: 1em;
   }
 }
 
