@@ -1,5 +1,6 @@
 $base-font: 'Avenir', Helvetica, Arial, 'Lucida Grande', sans-serif;
 $code-font: 'Ubuntu Mono', 'Courier New', monospace;
+$display-font: 'Corbert', $base-font;
 
 html {
   font-size: $base-font-size-mobile * 1px;
@@ -45,6 +46,11 @@ p {
 }
 
 h1,
-h2 {
-  font-weight: 400;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $display-font;
+  font-weight: normal;
 }
