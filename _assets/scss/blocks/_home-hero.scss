@@ -1,5 +1,6 @@
 .home-hero {
   text-align: center;
+  padding: 8em 0 !important;
   @include larger-than(mobile) {
     text-align: left;
   }
@@ -19,6 +20,10 @@
   @include larger-than(mobile) {
     margin: 0 $column-gutter 0 0;
   }
+}
+
+.home-hero__heading {
+  font-size: 2.5em;
 }
 
 .home-hero__heading,
