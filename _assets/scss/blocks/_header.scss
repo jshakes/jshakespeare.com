@@ -2,6 +2,10 @@
   background: $color-accent-1;
   padding: 2em 0;
   color: white;
+  text-align: center;
+  @include larger-than(mobile) {
+    text-align: left;
+  }
   a {
     @extend .reset-a;
     &:hover {

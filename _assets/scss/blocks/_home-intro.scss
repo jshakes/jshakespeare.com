@@ -1,4 +1,5 @@
 .home-intro {
+  @extend .section;
   position: relative;
   background: #e3eced;
   &:before {
