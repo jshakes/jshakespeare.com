@@ -1,7 +1,5 @@
 .home-hero {
   text-align: center;
-  background: $color-accent-1;
-  color: white;
   @include larger-than(mobile) {
     text-align: left;
   }
