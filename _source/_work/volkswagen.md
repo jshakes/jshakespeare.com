@@ -16,4 +16,6 @@ The page made use of animations and interactive components to educate the user a
 
 {% include components/figure.html src="/assets/images/gifs/vw-3.gif" %}
 
+#### In numbers
+
 The campaign as a whole resulted in 14.7% higher sales figures amongst the _Think Tiguan_ group than the control group, who received generic VW mail and digital advertisements.
