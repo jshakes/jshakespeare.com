@@ -6,14 +6,14 @@
 .work__button {
   @extend .reset-a;
   transition: background-color, 0.1s;
-  background-color: $color-accent-1;
+  background-color: $color-accent-2;
   color: $color-background;
   padding: 1em;
   display: inline-block;
   margin-right: 1em;
   &:hover {
     text-decoration: none;
-    background-color: lighten($color-accent-1, 10%);
+    background-color: lighten($color-accent-2, 10%);
   }
   &:last-child {
     margin-right: 0;

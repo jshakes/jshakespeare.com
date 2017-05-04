@@ -16,7 +16,6 @@ $extrude-height: 0.75em;
     margin-bottom: 1em;
     &:hover {
       text-decoration: none;
-      color: $color-accent-1;
       .work-grid__link-inner {
         bottom: 0;
         border-bottom: $extrude-height solid darken($color-accent-1, 20%);

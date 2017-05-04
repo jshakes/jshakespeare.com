@@ -1,25 +1,35 @@
 .home-intro {
   @extend .section;
   position: relative;
-  background: #e3eced;
+  background: $color-accent-1;
   &:before {
-    content: '';
     position: absolute;
-    background: #e3eced;
+    background-size: cover;
     width: 100%;
-    height: 50%;
+    height: 2em;
     left: 0;
     top: -2em;
-    padding-bottom: 2em;
     z-index: -1;
-    transform: skew(0, -2deg);
+    background-image: url('../images/block-header-1.svg');
   }
 }
 
 .home-intro__inner {
   @extend .content-wrapper;
+  @include safe-flexbox;
   > * {
     font-size: 1.25em;
+  }
+}
+
+.home-intro__photo {
+  width: 10em;
+  height: auto;
+  border-radius: 100%;
+  display: block;
+  max-width: none;
+  @include larger-than(mobile) {
+    margin-left: $width-content-padding;
   }
 }
 

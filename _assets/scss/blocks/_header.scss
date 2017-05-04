@@ -1,7 +1,6 @@
 .header {
   background: $color-accent-1;
   padding: 2em 0;
-  color: white;
   text-align: center;
   @include larger-than(mobile) {
     text-align: left;
@@ -21,10 +20,11 @@
 }
 
 .header__logo {
-  height: 2em;
+  height: 2.5em;
   margin-right: 1em;
 }
 
 .header__title {
   font-size: 1.5em;
+  line-height: 1;
 }

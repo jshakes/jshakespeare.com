@@ -1,7 +1,7 @@
 .home-hero {
   @extend .section;
   text-align: center;
-  padding: 6em 0 8em;
+  padding: 6em 0;
   @include larger-than(mobile) {
     text-align: left;
   }
