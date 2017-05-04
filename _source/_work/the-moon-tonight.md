@@ -22,6 +22,8 @@ While determining a user’s hemisphere was fairly trivial, I still needed to de
 
 With the user’s latitude and longitude, Dark Sky provides a decimal value that describes the moon phase, where 0 is a new moon, <0.5 is a waxing moon, and >0.5 is a waning moon.
 
+Converted to percentage, it looks like this:
+
 {% highlight javascript %}
 function getPhaseName(phase) {
   switch(true) {
