@@ -14,7 +14,7 @@ Time Magazine is among the longest runnning and most prestigious news publicatio
 
 With a small team of developers I was responsible for building a responsive interface built on Backbone.js that connected to Time's existing Wordpress-powered API. The new interface featured infinite scrolling, media-rich story formats and smartly-placed in-stream ads.
 
-### In the press
+#### In the press
 
 [Techcrunch: Time.com Gets A Big Redesign, Along With New Ad Units](http://techcrunch.com/2014/03/05/time-redesign/)
 
