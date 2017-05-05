@@ -14,6 +14,8 @@ Time Magazine is among the longest runnning and most prestigious news publicatio
 
 With a small team of developers I was responsible for building a responsive interface built on Backbone.js that connected to Time's existing Wordpress-powered API. The new interface featured infinite scrolling, media-rich story formats and smartly-placed in-stream ads.
 
+{% include components/figure.html src="/assets/images/work/time-iphone-article1.png" %}
+
 #### In numbers
 
 Following launch of the redesign, Time saw a [15% decline in bounce rate](http://www.poynter.org/2014/time-coms-bounce-rate-down-15-percentage-points-since-adopting-continuous-scroll/257466/), with the number of desktop viewers visiting multiple articles up 21%. In all, the website saw a 118% increase traffic in the 12 months following launch.
