@@ -23,4 +23,4 @@ The back-end of the application runs on Node.js and MongoDB and uses Socket.io f
 
 #### In the press
 
-[The Next Web: Milkshake is a simple way to share three-track music playlists and chat with friends in real-time](https://thenextweb.com/apps/2014/10/21/milkshake-simple-way-share-three-track-music-playlists-chat-friends-real-time)
+- [The Next Web: Milkshake is a simple way to share three-track music playlists and chat with friends in real-time](https://thenextweb.com/apps/2014/10/21/milkshake-simple-way-share-three-track-music-playlists-chat-friends-real-time)
