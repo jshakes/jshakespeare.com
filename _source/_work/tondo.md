@@ -5,6 +5,7 @@ subtitle: Hacker news for the art world
 type: client
 order: 7
 date: 2014-11-01
+technology: Marionette, Sass, Node.js
 ---
 
 Tondo aims to do for the art world what Hacker News did for the tech world. From discovering new works and exhibitions through to  nding a good place to get a painting framed,

@@ -6,6 +6,7 @@ type: client
 order: 6
 date: 2014-03-01
 projectUrl: http://time.com/
+technology: Backbone, Coffeescript, Grunt, Sass, Wordpress
 ---
 
 Time Magazine is among the longest runnning and most prestigious news publications in the country, but in order to remain relevant in an online age it needed a website that could deliver content in a fast and effortless way. The aim was to build a website that would “do for the minute what Time has always done for the week”, that is to deliver high quality, time-relevant content in an readable and hierarchical way.

@@ -6,8 +6,8 @@ layout: main
   <article class="post work">
     <section class="post__header">
       <h1 class="post__title">{{ page.title }}</h1>
-      <span class="post__publish-date">{{ page.date | date: "%B %Y" }}</span>
       <p class="work__subtitle">{{ page.subtitle }}</p>
+      <p class="work__technology">{{ page.technology }}</p>
       {% if page.projectUrl %}
       <div class="work__buttons">
         <a href="{{ page.projectUrl }}" target="_blank" class="work__button">See the project</a>

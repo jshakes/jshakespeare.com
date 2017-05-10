@@ -5,6 +5,7 @@ subtitle: Landing page for dealership marketing emails promoting the 2013 Tiguan
 type: client
 order: 7
 date: 2013-07-01
+technology: Node.js, jQuery, Sass
 ---
 Volkswagen needed an informational landing page to tie in with a grassroots marketing campaign to in the Seattle area called _Think Tiguan_. The twist was that the experience had to be tailor made for each customer. In order to do this, the landing page was comprised of different components based on what the customer prioritized in a car - safety, fun, performance or capacity. These priorities were determined by analyzing various factors such as demographic, previous purchase history and discussions with local VW dealers and canvassers.
 

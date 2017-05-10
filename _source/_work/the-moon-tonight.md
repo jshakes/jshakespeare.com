@@ -7,6 +7,7 @@ order: 2
 date: 2016-09-19
 projectUrl: http://moontonight.co
 githubUrl: https://github.com/jshakes/moontonight
+technology: Sass, Gulp, Jekyll
 ---
 The Moon Tonight started with a simple idea: could all the moon’s phases be rendered purely with CSS? I ran a [few experiments](https://codepen.io/jshakes/pen/zrByoQ) and discovered that, with a little visual trickery, they could.
 
