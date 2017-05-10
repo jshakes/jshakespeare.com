@@ -1,8 +1,8 @@
-domain: somadomain.com
+domain: jshakespeare.com
 
 surge:
-  enabled: false
-  domain:  somadomain.com
+  enabled: true
+  domain:  jshakespeare.com
 
 rsync:
   enabled:          false
