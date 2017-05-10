@@ -11,11 +11,11 @@ Volkswagen needed an informational landing page to tie in with a grassroots mark
 
 Customers arriving at the page from a source other than a link in the personalized email (which used URL parameters to propagate the user’s information) were prompted to enter their details to receive a personalized experience based on their affiliation with a local VW dealership. If the user did not exist on a dealer’s database, they were shown a generic version of the landing page.
 
-{% include components/figure.html src="/assets/images/gifs/vw-2.gif" %}
+{% include components/figure.html src="/assets/images/work/gifs/vw-2.gif" %}
 
 The page made use of animations and interactive components to educate the user about the features of the Tiguan that were most relevant to them.
 
-{% include components/figure.html src="/assets/images/gifs/vw-3.gif" %}
+{% include components/figure.html src="/assets/images/work/gifs/vw-3.gif" %}
 
 #### In numbers
 
