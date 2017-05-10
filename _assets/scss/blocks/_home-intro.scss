@@ -16,9 +16,11 @@
 
 .home-intro__inner {
   @extend .content-wrapper;
-  @include safe-flexbox;
   > * {
     font-size: 1.25em;
+  }
+  @include larger-than(mobile) {
+    @include safe-flexbox;
   }
 }
 
@@ -26,10 +28,11 @@
   width: 10em;
   height: auto;
   border-radius: 100%;
-  display: block;
+  display: none;
   max-width: none;
   @include larger-than(mobile) {
     margin-left: $width-content-padding;
+    display: block;
   }
 }
 
