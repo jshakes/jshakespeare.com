@@ -21,13 +21,13 @@ This can still take a fair bit of time (it took 15 minutes on my computer), so g
 
 If you're wondering what the `--with` flags mean:
 
-* [LibVPX](https://www.webmproject.org/code/) is a library that contains implementations of the [VP8](https://en.wikipedia.org/wiki/VP8) and [VP9](https://en.wikipedia.org/wiki/VP9) encoders (hence VP*X*) that create WebM video files. (We wil only be using VP9).
+* [LibVPX](https://www.webmproject.org/code/) is a library that contains implementations of the [VP8](https://en.wikipedia.org/wiki/VP8) and [VP9](https://en.wikipedia.org/wiki/VP9) encoders (hence VP*X*) that create WebM video files. (We will only be using VP9).
 * libvorbis contains an implementation of the [Ogg Vorbis](https://xiph.org/vorbis/) encoder that is used for encoding audio tracks in the WebM container.
 * [libx264](https://www.videolan.org/developers/x264.html) is a codec from VideoLAN (who make VLC) that lets us encode H.264 video and audio into the MP4 container.
 
 ### Create the WebM file
 
-`cd` into the directory containing your source/input video file and run the following command:
+`cd` into the directory containing your source/input video file and run the following command, replacing the filenames appropriately:
 
 `ffmpeg -i my-original-video.wmv -f webm -vcodec libvpx-vp9 -vb 1024k my-new-video.webm`
 
@@ -55,7 +55,7 @@ Again, you can tweak the bitrate flag for video (`-vb`) and audio (`-ab`), and p
 
 ### Embed the files with `<video>`
 
-Now you can reference the files you’ve created with your HTML:
+Now you can reference the files you’ve created within your HTML:
 
 {% highlight html %}
 <video>
