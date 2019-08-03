@@ -5,15 +5,15 @@ permalink: bilingual-developers-and-design-smells
 title: Bilingual developers and design smells
 ---
 
-In digital product development, the process of turning visual mockups into code is sometimes called ‘translating’ a design. This choice of words highlights the fact that the design-to-code stage is not a rote formula that takes in pixels and spits out code, but a process of interpretation from one language to another. The programmer who builds the interface, like a linguistic translator, must be proficient in both languages if she is to effectively convey meaning from one to the other.
+In digital product development, the process of turning visual mockups into code is sometimes called ‘translating’ a design. This choice of words highlights the fact that the design-to-code stage is not a rote formula that takes in pixels and spits out code, but an interpretation from one language to another. A translator must be proficient in both languages if she is to effectively convey meaning from one to the other. In this case, the two languages are design and code.
 
-If you’ve ever learned a foreign language then you will know that words cannot simply be exchanged like-for-like in order to translate a phrase. (You will also know this if you’ve ever heard a joke that begins with “in Soviet Russia”). Translation requires knowing not just vocabulary but word order, idioms, pronouns, conjugations, etiquette, punctuation and more.
+If you’ve ever learned a foreign language then you will know that words cannot simply be exchanged like-for-like in order to translate a phrase. (You will also know this if you’ve ever heard a joke that begins with [“in Soviet Russia”](https://en.wikipedia.org/wiki/Russian_reversal)). Translation requires knowing not just vocabulary but word order, idioms, pronouns, conjugations, etiquette, punctuation and more.
 
 The middle ground between any two languages is meaning, and that meaning exists in the mind of the translator. Translation requires unearthing meaning so it can be reconstructed in another language.
 
 {% include components/figure.html src="/assets/images/post_images/translation-fail.jpg" caption="Translating words but not their meaning: the bread and butter of clickbait sites since 2007" %}
 
-It is the job of an interface developer to be fluent in the languages of both design and programming. She must look beneath the surface of the mockups and see the rules and patterns that govern how the interface should behave in different contexts. Does the layout follow a grid system? Which values are fixed and which are fluid? What is the typographic hierarchy? The better she is at identifying these rules, the better the code will describe the design system.
+It is the job of an interface developer to be fluent in the languages of both design and code. She must look beneath the surface of the mockups and see the rules and patterns that govern how the interface should behave in different contexts. Does the layout follow a grid system? Which values are fixed and which are fluid? What is the typographic hierarchy? The better she is at identifying these rules, the better the code will describe the design system.
 
 Describing a design system in code is important because mockups of an interface do not paint a complete picture of how it will behave. Mockups are frozen in time, but a user interface must be capable of responding to an infinite combination of browsers, devices, screen resolutions, zoom-levels, and content. Code that effectively describes a design system can fill in these gaps and makes the interface more robust.
 
