@@ -9,9 +9,9 @@ In digital product development, the process of turning visual mockups into code 
 
 If you’ve ever learned a foreign language then you will know that words cannot simply be exchanged like-for-like in order to translate a phrase. (You will also know this if you’ve ever heard a joke that begins with “in Soviet Russia”). Translation requires knowing not just vocabulary but word order, idioms, pronouns, conjugations, etiquette, punctuation and more.
 
-{% include components/figure.html src="/assets/images/post_images/translation-fail.jpg" caption="Translating words but not their meaning: the bread and butter of clickbait sites since 2007" %}
-
 The middle ground between any two languages is meaning, and that meaning exists in the mind of the translator. Translation requires unearthing meaning so it can be reconstructed in another language.
+
+{% include components/figure.html src="/assets/images/post_images/translation-fail.jpg" caption="Translating words but not their meaning: the bread and butter of clickbait sites since 2007" %}
 
 It is the job of an interface developer to be fluent in the languages of both design and programming. She must look beneath the surface of the mockups and see the rules and patterns that govern how the interface should behave in different contexts. Does the layout follow a grid system? Which values are fixed and which are fluid? What is the typographic hierarchy? The better she is at identifying these rules, the better the code will describe the design system.
 
