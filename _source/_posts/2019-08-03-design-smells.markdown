@@ -1,8 +1,8 @@
 ---
 date: 2019-08-03 10:47:00+05:00
 layout: post
-permalink: bilingual-developers-and-design-smells
-title: Bilingual developers and design smells
+permalink: design-smells
+title: Design smells
 ---
 
 In digital product development, the process of turning visual mockups into code is sometimes called ‘translating’ a design. This choice of words highlights the fact that the design-to-code stage is not a rote formula that takes in pixels and spits out code, but an interpretation from one language to another. A translator must be proficient in both languages if she is to effectively convey meaning from one to the other. It is the job of an interface developer to be fluent in the languages of both design and code.
